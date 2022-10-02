@@ -1,0 +1,65 @@
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	color: white;
+	background-color: #1b3239;
+	overflow-x: hidden;
+}
+
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.container-lx {
+	width: 100%;
+	max-width: 1530px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* Vendors */
+@import "vendors/lightbox";
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/btn";
+@import "blocks/section";
+@import "blocks/card";
+@import "blocks/works";
+@import "blocks/footer";
+@import "blocks/copyright";

@@ -1,0 +1,42 @@
+.section {
+	padding: 60px 0;
+	box-shadow: 0 20px 47px 22px rgb(0 0 0 / 86%);
+
+	@media (max-width: 426px) {
+		padding: 40px 0;
+	}
+}
+
+.section-nbs {
+	box-shadow: none;
+
+}
+
+.section__title {
+	width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+    text-align: center;
+	font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    color: #DCA36E;
+	text-transform: uppercase;
+
+	& span {
+		color: white;
+	}
+
+	@media (max-width: 426px) {
+		margin: 0 auto 25px;
+		font-size: 45px;
+	}
+}
+
+.section__about {
+	background: rgb(82,91,86);
+	background: -moz-linear-gradient(138deg, rgba(82,91,86,1) 8%, rgba(27,50,57,1) 67%, rgba(220,163,110,1) 100%);
+	background: -webkit-linear-gradient(138deg, rgba(82,91,86,1) 8%, rgba(27,50,57,1) 67%, rgba(220,163,110,1) 100%);
+	background: linear-gradient(138deg, rgba(82,91,86,1) 8%, rgba(27,50,57,1) 67%, rgba(220,163,110,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#525b56",endColorstr="#dca36e",GradientType=1);
+	padding: 60px 0 0;
+}

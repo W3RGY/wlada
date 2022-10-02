@@ -1,0 +1,151 @@
+.container__card {
+	display: grid;
+    place-items: center;
+	grid-gap: 15px;
+	grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 772px) {
+	.container__card {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+  }
+
+  .card {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	overflow: hidden;
+	padding: 15px;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	color: #FFF;
+	background-color: inherit;
+	border-radius: 20px;
+	box-shadow: 0 6px 11px 3px #00000033;
+  }
+
+  @media (max-width: 772px) {
+	.card {
+	  height: 500px;
+	  width: 80%;
+	}
+  }
+
+  .card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	background-size: cover;
+	background-position: 0 0;
+	transition: transform calc(700ms * 1.5) cubic-bezier(.19,.1,.22,1);
+	will-change: transform;
+  }
+
+  .card:nth-child(1)::before {
+	background-image: url("../img/IMG_7480.webp");
+  }
+  .card:nth-child(2)::before {
+	background-image: url("../img/IMG_7480.webp");
+  }
+  .card:nth-child(3)::before {
+	background-image: url("../img/IMG_7480.webp");
+  }
+
+  .content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 15px;
+	transition: transform 700ms cubic-bezier(.19,.1,.22,1);
+	z-index: 1;
+
+  }
+
+  .title {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .description {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1.35;
+  }
+
+
+
+  .card::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 101%;
+	height: 200%;
+	pointer-events: none;
+	background-image: linear-gradient(
+	  to bottom,
+	  rgba(0, 0, 0, 0) 0%,
+	  rgba(0, 0, 0, 0.80) 100%
+	);
+	transform: translateY(-50%);
+	transition: transform calc(700ms * 2) cubic-bezier(.19,.1,.22,1);
+  }
+
+  .card::after {
+	transform: translateY(0);
+  }
+
+  .content {
+	transform: translateY(calc(100% - 27px));
+  }
+
+  .card:hover:after,
+  .card:focus-within:after {
+	transform: translateY(-50%);
+  }
+
+  .card:hover .content,
+  .card:focus-within .content {
+	transform: translateY(0);
+  }
+
+  .card:hover::before,
+  .card:focus-within::before {
+	transform: translateY(-5%);
+  }
+
+  /* Hover */
+  @media (hover: hover) and (min-width: 772px) {
+	.card::after {
+	  transform: translateY(0);
+	}
+
+	.content {
+	  transform: translateY(calc(100% - 27px));
+	}
+
+	.card:hover:after,
+	.card:focus-within:after {
+	  transform: translateY(-50%);
+	}
+
+	.card:hover .content,
+	.card:focus-within .content {
+	  transform: translateY(0);
+	}
+
+	.card:hover::before,
+	.card:focus-within::before {
+	  transform: translateY(-5%);
+	}
+  }
