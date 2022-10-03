@@ -9,7 +9,6 @@ body {
   line-height: 1.6;
   color: white;
   background-color: #1b3239;
-  overflow-x: hidden;
 }
 
 *,
@@ -298,9 +297,7 @@ body.lb-disable-scrolling {
 }
 @media (max-width: 772px) {
   .nav {
-    opacity: 0;
     width: 100%;
-    height: 30vh;
     flex-direction: column;
     padding-top: 9px;
     background-color: rgba(0, 0, 0, 0.85);
@@ -309,8 +306,9 @@ body.lb-disable-scrolling {
     left: 0;
     right: 0;
     z-index: 1;
-    transform: translateX(110%);
+    transform: translateY(-160%);
     transition: transform 0.2s ease-out;
+    height: 200px;
   }
 }
 
@@ -351,8 +349,7 @@ body.lb-disable-scrolling {
 
 @media (max-width: 772px) {
   .nav.show {
-    opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .burger {
@@ -433,6 +430,7 @@ body.lb-disable-scrolling {
 @media (max-width: 426px) {
   .intro {
     padding: 0 10px;
+    height: 50vh;
   }
 }
 
@@ -483,6 +481,11 @@ body.lb-disable-scrolling {
     font-size: 62px;
   }
 }
+@media (max-width: 426px) {
+  .intro__title-main {
+    font-size: 53px;
+  }
+}
 
 .intro__subtitle {
   height: 81px;
@@ -529,7 +532,12 @@ body.lb-disable-scrolling {
 }
 @media (max-width: 426px) {
   .intro__text {
-    font-size: 23px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 376px) {
+  .intro__text {
+    padding-bottom: 0;
   }
 }
 
@@ -563,6 +571,11 @@ body.lb-disable-scrolling {
 @media (max-width: 426px) {
   .intro__follow-text {
     font-size: 16px;
+  }
+}
+@media (max-width: 376px) {
+  .intro__follow-text {
+    font-size: 14px;
   }
 }
 
@@ -733,6 +746,7 @@ body.lb-disable-scrolling {
   background: linear-gradient(138deg, rgb(82, 91, 86) 8%, rgb(27, 50, 57) 67%, rgb(220, 163, 110) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#525b56",endColorstr="#dca36e",GradientType=1);
   padding: 60px 0 0;
+  overflow: hidden;
 }
 
 .container__card {
