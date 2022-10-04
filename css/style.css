@@ -796,15 +796,15 @@ body.lb-disable-scrolling {
 }
 
 .card:nth-child(1)::before {
-  background-image: url("../img/IMG_7480.webp");
+  background-image: url("../img/family/family-5.webp");
 }
 
 .card:nth-child(2)::before {
-  background-image: url("../img/IMG_7480.webp");
+  background-image: url("../img/individual/individual-1.webp");
 }
 
 .card:nth-child(3)::before {
-  background-image: url("../img/IMG_7480.webp");
+  background-image: url("../img/lovestory/lovestory-2.webp");
 }
 
 .content {
