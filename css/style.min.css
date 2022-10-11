@@ -2008,6 +2008,7 @@ body.lb-disable-scrolling {
   display: flex;
   flex-wrap: wrap;
 }
+
 .footer__block {
   width: 33.33333%;
   text-align: center;
