@@ -1394,7 +1394,7 @@ body.lb-disable-scrolling {
 @media (max-width: 426px) {
   .intro {
     padding: 0 10px;
-    height: 75vh;
+    height: 70vh;
   }
 }
 
