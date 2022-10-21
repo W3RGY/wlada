@@ -1453,7 +1453,7 @@ body.lb-disable-scrolling {
 }
 @media (max-width: 426px) {
   .intro__title-main {
-    font-size: 58px;
+    font-size: 52px;
     line-height: 1.1;
   }
 }
